@@ -84308,9 +84308,13 @@ var CreateCalenderEventFromSelectedText = (event_obj,tab) => {
     }
 }
 
+var APP_SERVER = "https://calendar-events-test.herokuapp.com"
+var END_POINT =  "/parse_text"
+
+
 var CreateCalenderEvent = (event_obj) => {
     var options = {
-        uri: 'https://127.0.0.1:5000/parse_text',
+        uri: APP_SERVER + END_POINT,
         method: 'POST',
         json: {
             title:event_obj.title || "", 
@@ -84329,6 +84333,7 @@ var CreateCalenderEvent = (event_obj) => {
         
     });
 }
+
 
 
 var CreateCalendarEventLink = (event)=>{

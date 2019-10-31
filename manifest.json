@@ -1,21 +1,19 @@
 {
     "manifest_version": 2,
-    "name": "GmailJS Node Boilerplate Extension",
-    "short_name": "gmailjsnode",
-    "version": "1.0",
+    "name": "Gmail Calendar Events Extension",
+    "short_name": "calender_event",
+    "version": "0.0.0.1",
     "author": "Jostein Kjønigsen <jostein@kjonigsen.net>",
 
-    "description": "A minimal extension which demonstrates how to create a extension with Gmail.JS and NodeJS-based bundling.",
-
-
+    "description": "This extention allows to create new google calender evet from selected text, while trying to predict the location and date from the selected text.",
     "background": {
         "scripts": ["dist/extension.js"]
       },
-    "icons": {
+      "icons": { 
         "16": "media/16.png",
         "48": "media/48.png",
-        "128": "media/128.png"
-    },
+       "128": "media/128.png"
+     },
     "permissions": [
         "https://*/*",
         "contextMenus",
